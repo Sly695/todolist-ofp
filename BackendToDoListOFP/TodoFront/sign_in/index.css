@@ -1,23 +1,29 @@
-body{
+body {
     overflow-y: hidden;
     width: 100vw;
     height: 100vh;
     padding: 0;
     margin: 0;
     display: flex;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        overflow-y: scroll;
+    }
 }
 
-.sign-up-form{
+.sign-up-form {
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 100px;
     height: 100%;
     box-sizing: border-box;
+    margin: auto;
 }
 
-.sign-up{
+.sign-up {
     height: 80%;
     width: 100%;
     justify-content: space-between;
@@ -26,26 +32,26 @@ body{
     margin: auto;
 }
 
-.email-wrap{
+.email-wrap {
     display: flex;
     flex-direction: column;
     height: 150px;
 }
 
-.password-wrap{
+.password-wrap {
     display: flex;
     flex-direction: column;
     height: 150px;
 }
 
-.connect-wrap{
+.connect-wrap {
     display: flex;
     flex-direction: column;
     height: 150px;
     text-align: center;
 }
 
-.connect-wrap > button{
+.connect-wrap>button {
     height: 66px;
     border-radius: 10px;
     outline: none;
@@ -55,11 +61,11 @@ body{
     font-size: 20px;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
-input{
+input {
     height: 50px;
     border-radius: 10px;
     outline: none;
@@ -67,10 +73,11 @@ input{
     padding: 10px;
 }
 
-label{
+label {
     font-size: 20px;
+    margin-bottom: 8px;
 }
 
-.switch:hover{
+.switch:hover {
     text-decoration: underline;
 }
