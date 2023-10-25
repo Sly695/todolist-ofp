@@ -112,6 +112,6 @@ h2 a:hover {
     color: #550600;
 }
 
-.mycheckbox {
+.regions input {
     transform: scale(2);
 }
