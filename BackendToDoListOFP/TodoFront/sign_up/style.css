@@ -86,7 +86,7 @@ input:focus {
 }
 
 .inscription .btn {
-    width: 100%;
+    width: 25rem;
     height: 5rem;
     border-radius: 10px;
     background-color: #427A82;
